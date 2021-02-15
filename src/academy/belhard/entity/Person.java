@@ -10,18 +10,9 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    //вариант метода №1
+
     public String getFullName() {
         String res1 = firstName + " " + lastName;
         return res1;
     }
-//    //вариант метода №2
-//    public String getFullName(){
-//        System.out.println(firstName + " " + lastName);
-//        return "";
-//   }
-
-
-
-
 }

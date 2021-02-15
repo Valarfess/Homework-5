@@ -16,26 +16,15 @@ public class User extends Person {
         this.email = email;
         this.password = password;
     }
-    //вариант метода №1
+
     public String getFullInfo() {
         String res2 = "Имя: " + firstName + " " + lastName + "\n" + "E-mail: " + email;
         return res2;
     }
 
-
-//    // вариант метода №2
-//    public String getFullInfo(){
-//        System.out.println("Имя: " + firstName + " " + lastName + "\n" + "E-mail: " + email);
-//        return "";
-//    }
-
-
-
     public boolean isPasswordCorrect(String password) {
         return this.password.equals(password);
     }
-
-
 
     public int hashCode() {
         return Objects.hash(password);
